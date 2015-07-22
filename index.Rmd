@@ -1,0 +1,65 @@
+---
+title       : Presenting a simple Shiny app with tab panels
+subtitle    : Analysis of subsets of a dataframe (Slide 1)
+author      : ER
+job         : employee
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : standalone  # {selfcontained draft}
+knit        : slidify::knit2slides
+---
+
+## Slide 2 presentation of my shiny app
+
+1. Aim
+2. Functioning
+3. Limitations
+
+---  
+
+## Slide 3
+
+Aim:
+- To make an app that facilitates initial analysis of subsets of the data
+- As an app, it allows to communicate this rough analysis with anyone who has internet access
+
+
+---
+
+## slide 4
+
+Implementation:
+
+I started the slide deck with author("first_deck").
+
+As I cannot illustrate code evaluation from the app in this short slide deck, I only introduce here the dataset used: the mtcars dataset.
+
+The app allows selection via radio buttons of 4, 6 or 8 cylinders-subsets.
+
+```{r slide 3 code}
+data(mtcars)
+str(mtcars)
+head(mtcars)
+```
+
+---
+
+## slide 5
+
+Limitations: 
+- Go button didn't prevent error message on starting app for the plot (before making selection on radio buttons)
+- Output from summary appears already before making a selection.
+
+Thank you for your peer review and feedback!
+
+
+
+
+
+
+
+
+
+
